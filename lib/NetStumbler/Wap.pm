@@ -2,7 +2,7 @@ package NetStumbler::Wap;
 
 use 5.008003;
 use strict;
-#use warnings;
+use warnings;
 
 require Exporter;
 
@@ -11,7 +11,7 @@ our @ISA = qw(Exporter);
 #
 # We do not Export anything
 #
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 Object Methods
 

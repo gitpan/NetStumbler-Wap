@@ -4,3 +4,5 @@ Revision history for Perl extension NetStumbler::Wap.
 	- original version; created by h2xs 1.23 with options
 		h2xs -AX -n NetStumbler::Wap
 	- Initial conversion to OO, and CPAN import
+0.02  Tue May 11 14:11:00 2004
+	- Added use warnings back in
