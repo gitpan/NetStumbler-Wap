@@ -2,6 +2,7 @@ package NetStumbler::Wap;
 
 use strict;
 use warnings;
+use Data::Dump qw(dump);
 
 require Exporter;
 
@@ -10,7 +11,7 @@ our @ISA = qw(Exporter);
 #
 # We do not Export anything
 #
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 =head1 Object Methods
 
@@ -25,26 +26,28 @@ sub new
 {
     my $proto = shift;
     my $class = ref($proto) || $proto;
-    my $self  = {};
+    my $self = {} ;
     $self->{VENDORS} = {};
     bless ($self, $class);
-    eval 
-    { 
-	while(<DATA>)
-	{
-	    chomp;
-	    my ($prefix,$ven) = split(/\t/);
-            if($prefix)
-            {
-                $self->{VENDORS}->{$prefix} = $ven;
-            }
-            else
-            {
-                print "Prefix was null\n";
-            }
-	}
-    };    
     return $self;
+}
+
+sub initialize
+{
+    my $self = shift;
+    while(<DATA>)
+    {
+	if(/END/)
+	{
+	    last;
+	}
+	chomp;
+	my ($prefix,$ven) = split(/\t/);
+	if($prefix && $prefix =~ /\w\w:\w\w:\w\w/i)
+	{
+	    $self->{VENDORS}->{$prefix} = $ven;
+	}
+    }
 }
 
 =head2 isAdhoc($flags)
@@ -104,7 +107,7 @@ Example:
 
 =cut
 
-sub hasWEP
+sub isWEP
 {
 	my $self = shift;
 	my $flags = shift;
