@@ -1,0 +1,11 @@
+--- #YAML:1.0
+name: NetStumbler-Wap
+version: 0.01
+author:
+  - |-
+    Salvatore E. ScottoDiLuzio <lt>washu@olypmus.net<gt>
+abstract: |-
+  Module to determine Wireless NIC vendor based on MAC
+license: perl
+provides: {}
+generated_by: Module::Build version 0.24
