@@ -10,7 +10,7 @@ our @ISA = qw(Exporter);
 #
 # We do not Export anything
 #
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 Object Methods
 
@@ -106,6 +106,7 @@ Example:
 
 sub hasWEP
 {
+	my $self = shift;
 	my $flags = shift;
 	return $flags & 0x0010;
 }

@@ -8,3 +8,5 @@ Revision history for Perl extension NetStumbler::Wap.
 	- changed version requirement to 5.8
 0.04  Thu May 13 08:00:00 2004
 	- removed perl version requirement for CPAN
+0.05  Wed Jan 5 08:00:00 2005
+	- fixed a bug with 2 function calls not referenceing self
