@@ -9,6 +9,11 @@ package name. Got a better suggestion for a pacckge name send me an email to
 washu@olypmus.net. This package provides a quick and easy lookup method to determine a 
 vendor for a given mac address using a list generted from oui database.
 
+Version 0.02 -- 5/11/2004
+	-- Added META.yml to the distribution
+Version 0.03 -- 5/11/2004
+	-- changed version requirement to 5.8
+
 INSTALLATION
 
 To install this module type the following:
