@@ -11,7 +11,7 @@ our @ISA = qw(Exporter);
 #
 # We do not Export anything
 #
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 =head1 Object Methods
 
