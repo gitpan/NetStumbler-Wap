@@ -14,5 +14,7 @@ Revision history for Perl extension NetStumbler::Wap.
 	- fixed a bug with data load not working correctly
 0.07  Wed Feb 16 7:40:00 2005
 	- fixed the tests
-0.08  Wed Mar 2 :07:34:00 2005
+0.08  Wed Mar 2 7:34:00 2005
 	- removed Data::Dump dependancy
+0.09  Saturday Sep 15 9:13:00 2007
+ 	- fixed a line issue

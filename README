@@ -17,7 +17,8 @@ Version 0.03 -- 5/11/2004
 
 Version 0.04 -- 5/13/2004
 	-- remove perl version requirements for CPAN testing
-
+Version 0.09 -- 9/15/07
+	-- fixed a line chomp issue
 
 INSTALLATION
 

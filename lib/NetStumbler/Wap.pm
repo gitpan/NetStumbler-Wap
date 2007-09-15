@@ -10,7 +10,7 @@ our @ISA = qw(Exporter);
 #
 # We do not Export anything
 #
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 =head1 Object Methods
 
@@ -44,6 +44,7 @@ sub initialize
 	my ($prefix,$ven) = split(/\t/);
 	if($prefix && $prefix =~ /\w\w:\w\w:\w\w/i)
 	{
+		chomp($ven);
 	    $self->{VENDORS}->{$prefix} = $ven;
 	}
     }
